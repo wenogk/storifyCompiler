@@ -138,6 +138,7 @@ pathId=idVal;
 function showStory() {
   $("#storyContainer").show();
   loadPath(1)
+    $("#storyContainer").get(0).scrollIntoView();
 }
 
 
