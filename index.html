@@ -25,13 +25,7 @@
   <input class="form-check-input" type="checkbox" id="helperCheckbox" value="t">
   <label class="form-check-label" for="inlineCheckbox1">Auto # Numbering</label>
 </div>
-              <textarea class="form-control" id="writingPad" rows="15"></textarea>
-              <br/>
-              <button class="btn btn-dark btn-lg btn-block"  onclick="compiler()">Compile</button>
-              <div id="jsonCodeContainer" style="display:none;">
-              <hr>
-              <br/>
-              <textarea style="background:black;color:#7FFF00;" class="form-control" id="jsonCode" rows="15">
+              <textarea class="form-control" id="writingPad" rows="15">
                 #1
                 question: eat apple?
                 option: eat it
@@ -41,6 +35,13 @@
                 Death of the world
                 #3 ( throw it -  eat apple? )
                 Light of the world
+              </textarea>
+              <br/>
+              <button class="btn btn-dark btn-lg btn-block"  onclick="compiler()">Compile</button>
+              <div id="jsonCodeContainer" style="display:none;">
+              <hr>
+              <br/>
+              <textarea style="background:black;color:#7FFF00;" class="form-control" id="jsonCode" rows="15">
               </textarea>
               <br/>
               <button class="btn btn-dark btn-lg btn-block"  onclick="showStory()">Run story</button>
