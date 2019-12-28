@@ -55,7 +55,7 @@ function compiler() {
              id: optionID
            })
         } else if(lines[i].startsWith(STARTERS[4])) { // if video:
-          videoID = lines[i].substring(7).trim()
+          videoID = lines[i].substring(6).trim()
         }
         if(( i+1 < lines.length)&&(!lines[i+1].startsWith(sep))) { i = i+1; } else { break; }
       }
