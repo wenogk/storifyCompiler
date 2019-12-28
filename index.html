@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biotech Survey Demo</title>
+    <link href="./index.css" rel="stylesheet">
+    <link href="https://bootswatch.com/4/sandstone/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+  </style>
+
+  </head>
+  <body class='bg-primary'>
+
+    <div class="container v-100">
+      <div class="row h-100">
+        <div class="col-12 mx-auto my-auto">
+          <div id="surveyContainer" class='card fade w-100'></div>
+          <div id="result" class='card fade'>
+            <div id="resultHeader" class='card-header h1'></div>
+            <div id="resultBody" class='card-body show'>
+              <div id="compiler">
+                <div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="helperCheckbox" value="t">
+  <label class="form-check-label" for="inlineCheckbox1">Auto # Numbering</label>
+</div>
+              <textarea class="form-control" id="writingPad" rows="15"></textarea>
+              <br/>
+              <button class="btn btn-dark btn-lg btn-block"  onclick="compiler()">Compile</button>
+              <div id="jsonCodeContainer" style="display:none;">
+              <hr>
+              <br/>
+              <textarea style="background:black;color:#7FFF00;" class="form-control" id="jsonCode" rows="15"></textarea>
+            </div>
+              <hr>
+              <br/><br/>
+              </div>
+              <div id="bookText"></div><hr>
+              <div id="bookQuestion"></div>
+              <div id="jsonCode">
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap@4.1.0/dist/js/bootstrap.js"></script>
+    <script src="http://www.turnjs.com/lib/turn.min.js"></script>
+    <script src="./compiler.js"></script>
+
+  </body>
+</html>
