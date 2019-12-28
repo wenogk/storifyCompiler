@@ -9,7 +9,41 @@
     <style>
 
   </style>
+  <script>
+  youtube = function() {
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}
 
+var player;
+function playVideo(id) {
+  player = new YT.Player('videoPlayer', {
+    videoId: id,
+    events: {
+      'onReady': onPlayerReady
+    },
+    playerVars: {
+      'autoplay': 1,
+      'controls': 0,
+      'disablekb': 1,
+      'fs': 0,
+      'loop': 1,
+      'modestbranding': 1,
+      'rel': 0,
+      'showinfo': 0,
+      'mute': 1,
+      'autohide': 1
+
+    }
+  });
+}
+
+function onPlayerReady() {}
+
+youtube();
+  </script>
   </head>
   <body class='bg-primary'>
 
@@ -40,6 +74,9 @@
               <br/><br/>
               </div>
               <div id="storyContainer">
+                <div class='text-center' style='width:100%'>
+                  <div id="videoPlayer"></div>
+                </div>
               <div id="bookText"></div><hr>
               <div id="bookQuestion"></div>
             </div>
@@ -53,7 +90,9 @@
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
     <script src="https://unpkg.com/bootstrap@4.1.0/dist/js/bootstrap.js"></script>
     <script src="http://www.turnjs.com/lib/turn.min.js"></script>
+
     <script src="./compiler.js"></script>
+
 
   </body>
 </html>
