@@ -18,7 +18,9 @@ function loadPath(idVal) {
 
 pathId=idVal;
 }
-
+function showStory() {
+  $("storyContainer").show();
+}
 
 
 $('#result').addClass('show');
@@ -85,6 +87,7 @@ function compiler() {
   console.log(JSON.stringify(obj))
   $("#jsonCode").text(JSON.stringify(obj, null, "\t"));
   $("#jsonCodeContainer").show()
+  $("#storyContainer").hide()
   OBJ = obj;
   loadPath(1)
 }
