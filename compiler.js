@@ -113,11 +113,15 @@ function loadPath(idVal) {
    let item = OBJ[idVal];
 
    if(item.video!=null) {
-     playVideo(YouTubeGetID(item.video.youtubeID))
-     code+= item.text
+     let code = "<div class='text-center' style='width:100%'><iframe width='560' height='315' src='https://www.youtube.com/embed/" + YouTubeGetID(item.video.youtubeID) +"?controls=0&autoplay=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div><br/>"
+     if(item.text!=null) {
+       code+= item.text
+     }
      $("#bookText").html(code);
    } else {
-     $("#bookText").html(item.text);
+     if(item.text!=null) {
+       $("#bookText").html(item.text);
+     }
    }
    if(item.question==null) {
        $("#bookQuestion").html("<em>You've reached the end of the path.</em><br/> <br/><button class='btn btn-info btn-lg btn-block' onclick='loadPath(1)'>Restart story</button><br/><br/><button class='btn btn-warning btn-lg btn-block' onclick='loadPath(" + (prevPath) +")'>Go Back One Path</button>");

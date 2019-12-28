@@ -9,41 +9,7 @@
     <style>
 
   </style>
-  <script>
-  youtube = function() {
-  var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-}
-
-var player;
-function playVideo(id) {
-  player = new YT.Player('videoPlayer', {
-    videoId: id,
-    events: {
-      'onReady': onPlayerReady
-    },
-    playerVars: {
-      'autoplay': 1,
-      'controls': 0,
-      'disablekb': 1,
-      'fs': 0,
-      'loop': 1,
-      'modestbranding': 1,
-      'rel': 0,
-      'showinfo': 0,
-      'mute': 1,
-      'autohide': 1
-
-    }
-  });
-}
-
-function onPlayerReady() {}
-
-youtube();
-  </script>
+  
   </head>
   <body class='bg-primary'>
 
@@ -74,9 +40,6 @@ youtube();
               <br/><br/>
               </div>
               <div id="storyContainer">
-                <div class='text-center' style='width:100%'>
-                  <div id="videoPlayer"></div>
-                </div>
               <div id="bookText"></div><hr>
               <div id="bookQuestion"></div>
             </div>
