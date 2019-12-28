@@ -19,7 +19,8 @@ function loadPath(idVal) {
 pathId=idVal;
 }
 function showStory() {
-  $("storyContainer").show();
+  //alert("button clicked")
+  $("#storyContainer").show();
 }
 
 
