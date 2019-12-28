@@ -82,7 +82,7 @@ function compiler() {
   $("#jsonCodeContainer").show()
   $("#storyContainer").hide()
   OBJ = obj;
-  loadPath(1)
+  //loadPath(1)
 }
 
 // UI STUFF
@@ -137,6 +137,7 @@ pathId=idVal;
 }
 function showStory() {
   $("#storyContainer").show();
+  loadPath(1)
 }
 
 
