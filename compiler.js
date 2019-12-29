@@ -113,7 +113,7 @@ function loadPath(idVal) {
    let item = OBJ[idVal];
 
    if(item.video!=null) {
-     let code = "<div class='text-center' style='width:100%'><iframe width='560' height='315' src='https://www.youtube.com/embed/" + YouTubeGetID(item.video.youtubeID) +"?controls=0&autoplay=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div><br/>"
+     let code = "<div class='text-center embed-responsive' style='width:100%'><iframe src='https://www.youtube.com/embed/" + YouTubeGetID(item.video.youtubeID) +"?controls=0&autoplay=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen class="embed-responsive-item"></iframe></div><br/>"
      if(item.text!=null) {
        code+= item.text
      }
