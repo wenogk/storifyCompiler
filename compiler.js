@@ -40,14 +40,18 @@ function compiler() {
       if( i+1 < lines.length) { i = i+1; }
       let newEntry = {}
       let text = "";
+      let isTextProvided = false;
       let question = "";
+      let isQuestionProvided = false;
       let options = []
       let videoID = "";
       while(!lines[i].startsWith(sep)) {
         if(isText(lines[i])) {
             text+=lines[i];
+            isTextProvided = true;
         } else if (lines[i].startsWith(STARTERS[1])) { //if question
             question = lines[i].substring(9).trim()
+            isQuestionProvided = true;
         } else if (lines[i].startsWith(STARTERS[2])) { //if option:
           optionID+=1
            options.push({
@@ -55,14 +59,14 @@ function compiler() {
              id: optionID
            })
         } else if(lines[i].startsWith(STARTERS[4])) { // if video:
-          videoID = lines[i].substring(6).trim()
+          videoID = YouTubeGetID(lines[i].substring(6).trim())
         }
         if(( i+1 < lines.length)&&(!lines[i+1].startsWith(sep))) { i = i+1; } else { break; }
       }
       if(text!="") {
         newEntry["text"] = text.trim();
       }
-      if(question!="") {
+      if(isQuestionProvided) {
         newEntry["question"] = {
           value : question,
           options: options
