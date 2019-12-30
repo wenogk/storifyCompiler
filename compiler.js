@@ -8,6 +8,7 @@ const STARTERS = ["#","question:","option:","ref[","video:"] // #, question, opt
 function addslashes( str ) {
     return (str + '').replace(/[\\"']/g, '\\$&').replace(/\u0000/g, '\\0');
 }
+
 function isText(textVal) {
   let bool = true;
   STARTERS.forEach((e) => {
@@ -150,7 +151,7 @@ $('#result').addClass('show');
 
 
 function helper() {
-    var sep = "#";
+    var sep = STARTERS[0];
     var counter=1;
     var textareaVal=$('#writingPad').val();
     var lines = $('#writingPad').val().split('\n');
