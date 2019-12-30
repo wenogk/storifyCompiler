@@ -61,7 +61,12 @@ function compiler() {
             id: optionID
           })
         } else if (lines[i].startsWith(STARTERS[3])) { // if ref[:
-          videoID = YouTubeGetID(lines[i].substring(6).trim())
+          let refID = lines[i].substring(4,lines[i].indexOf("]"))
+          let refVal = lines[i].substring(lines[i].indexOf(":")+1)
+          options.push({
+            value: refVal.trim(),
+            id: refID
+          })
         } else if (lines[i].startsWith(STARTERS[4])) { // if video:
           videoID = YouTubeGetID(lines[i].substring(6).trim())
         }
