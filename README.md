@@ -1,5 +1,7 @@
 # Storify
-Application that simplifies the process of building choose-your-own-path experiences. You focus on writing your story, we'll handle the technical stuff. Was inspired by the Netflix movie, "Bandersnatch"
+Application that simplifies the process of building choose-your-own-path experiences. Was inspired by the Netflix movie, "Bandersnatch"
+> You focus on writing your story, we'll handle the technical stuff.
+
 
 ### How it works
 Stories are written in my own syntax, I call it a hash-story which is very easy to learn and requires no coding experience from the user. This hash-story in my syntax is then compiled to a JSON object and can then the story can be viewed.
