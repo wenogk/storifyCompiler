@@ -9,10 +9,11 @@ Stories are written in my own syntax, which is very easy to learn and requires n
   * Unlimited options at each path
   * Video integration support with Youtube for video experiences
   * Reference to any path arbitrarily using its id
-  * Choose-your-own-path story viewer with youtubePlayer support
+  * Choose-your-own-path story viewer with youtube player support
 
 ### Syntax tutorial
-The syntax is line based, therefore each line is treated as a separate item except for when it is normal text where you can type for as long as you want.
+The syntax is line based. For each story, "item", a # character is placed in the line before it and after it. Below is a sample choos-your-own-path story I wrote:
+
 ```
 #
 Jack and Jill went up a hill. They trekked all the way up and Jill got thirsty, he noticed he finished all of his water.
