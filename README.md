@@ -34,9 +34,9 @@ Jack ignored it. They continued their journey and were happy.
 #
 ```
 
-Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
-![Alt Text](https://raw.githubusercontent.com/wenogk/storifyV2/master/readme-media/gif1.gif)  |  ![Alt Text](https://raw.githubusercontent.com/wenogk/storifyV2/master/readme-media/gif2.gif)
+Pathway 1                  |  Pathway 2                | Pathway 3          
+:-------------------------:|:-------------------------:|:-------------------------:
+![Alt Text](https://raw.githubusercontent.com/wenogk/storifyV2/master/readme-media/gif1.gif)  |  ![Alt Text](https://raw.githubusercontent.com/wenogk/storifyV2/master/readme-media/gif2.gif) |  ![Alt Text](https://raw.githubusercontent.com/wenogk/storifyV2/master/readme-media/gif3.gif)
 ### Syntax options
 Option | Use 
 ------------ | -------------
