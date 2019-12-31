@@ -33,8 +33,10 @@ Jack smashed the bottle on Jill's head, killing him.
 Jack ignored it. They continued their journey and were happy.
 #
 ```
-![Alt Text](https://raw.githubusercontent.com/wenogk/storifyV2/master/readme-media/gif1.gif)
 
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![Alt Text](https://raw.githubusercontent.com/wenogk/storifyV2/master/readme-media/gif1.gif)  |  ![Alt Text](https://raw.githubusercontent.com/wenogk/storifyV2/master/readme-media/gif2.gif)
 ### Syntax options
 Option | Use 
 ------------ | -------------
