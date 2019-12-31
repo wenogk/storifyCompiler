@@ -1,6 +1,6 @@
 # Storify
 Application that simplifies the process of building choose-your-own-path experiences. Was inspired by the Netflix movie, "Bandersnatch"
-> You focus on writing your story, we'll handle the technical stuff.
+> You focus on the story, we'll handle the technical stuff.
 
 
 ### How it works
