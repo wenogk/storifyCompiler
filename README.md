@@ -75,7 +75,8 @@ video:https://www.youtube.com/watch?v=0bpzcaiFPso
 #
 video:https://www.youtube.com/watch?v=TcCGbKd6s6U
 ```
-![Alt Text](https://raw.githubusercontent.com/wenogk/storifyV2/master/readme-media/gif4.gif&s=200)
+<img src="https://raw.githubusercontent.com/wenogk/storifyV2/master/readme-media/gif4.gif" width="200">
+
 
 
 
