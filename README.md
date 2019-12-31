@@ -12,7 +12,7 @@ Stories are written in my own syntax, which is very easy to learn and requires n
   * Choose-your-own-path story viewer with youtube player support
 
 ### Syntax tutorial
-The syntax is line based. For each story, "item", a # character is placed in the line before it and after it. Below is a sample choos-your-own-path story I wrote:
+The syntax is line based. For each story item, a # character is placed in the line before it and after it. The order of these items is what creates the pathway. Below is a sample text only choose-your-own-path story I wrote:
 
 ```
 #
@@ -34,6 +34,11 @@ Jack ignored it. They continued their journey and were happy.
 #
 ```
 
+### Syntax options
+Option | Use 
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 
 ### Future improvements
 To build a visual editor, need to use library such as https://jsplumbtoolkit.com/
