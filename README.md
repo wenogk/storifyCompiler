@@ -1,11 +1,11 @@
 # Storify
-Application that simplifies the process of building choose-your-own-path experiences. Was inspired by the Netflix movie, "Bandersnatch"
+Application that simplifies the process of building choose-your-own-path experiences. You focus on writing your story, we'll handle the technical stuff. Was inspired by the Netflix movie, "Bandersnatch"
 
 ### How it works
 Stories are written in my own syntax, which is very easy to learn and requires no coding experience from the user. This story in my syntax is then compiled to a JSON object and can then the story can be viewed.
 
 ### Features
-  * Write stories
+  * Write interactive stories
   * Unlimited options at each path
   * Video integration support with Youtube for video experiences
   * Reference to any path arbitrarily using its id
@@ -79,6 +79,8 @@ video:https://www.youtube.com/watch?v=TcCGbKd6s6U
 
 
 
+### Performance analysis
+The syntax written by the user is compiled to a javascript object which is a hashmap. Each item in the story has an id and this id is the key whereas its value is the item object. Because of the use of a hashmap and ordered id values, the time complexity to return a item is O(1) and the space complexity is O(J) where J is is the number of lines in the syntax subtracted by the number of, '#' characters
 
 ### Future improvements
 To build a visual editor, need to use library such as https://jsplumbtoolkit.com/
