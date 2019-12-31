@@ -11,5 +11,14 @@ Stories are written in my own syntax, which is very easy to learn and requires n
   * Reference to any path arbitrarily using its id
   * Choose-your-own-path story viewer with youtubePlayer support
 
+### Syntax tutorial
+The syntax is line based, therefore each line is treated as a separate item except for when it is normal text where you can type for as long as you want.
+~
+#
+
+#
+~
+
+
 ### Future improvements
 To build a visual editor, need to use library such as https://jsplumbtoolkit.com/
