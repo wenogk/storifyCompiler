@@ -33,10 +33,40 @@ Jack smashed the bottle on Jill's head, killing him.
 Jack ignored it. They continued their journey and were happy.
 #
 ```
+Below is the result of the pathways when the above syntax is compiled and run:
 
 Pathway 1                  |  Pathway 2                | Pathway 3          
 :-------------------------:|:-------------------------:|:-------------------------:
 ![Alt Text](https://raw.githubusercontent.com/wenogk/storifyV2/master/readme-media/gif1.gif)  |  ![Alt Text](https://raw.githubusercontent.com/wenogk/storifyV2/master/readme-media/gif2.gif) |  ![Alt Text](https://raw.githubusercontent.com/wenogk/storifyV2/master/readme-media/gif3.gif)
+
+#### Building experiences with youtube videos
+Being inspired by the Netflix show Bandersnatch, I had to implement some type of video solution - I decided to use youtube as it is the quickest one to get running, however I'm looking into other platforms such as vimeo / streamable to have more control of the experience. Below is some syntax that builds a choose your own path, video experience:
+```
+#
+question: Do what?
+option: Take her trick or treating
+option: Stay home
+video: https://www.youtube.com/watch?v=CbhhKmX3Wsg
+#
+question: -
+option: Look for your sister
+option: Go after the kid
+video: https://www.youtube.com/watch?v=b581T0xY4a8
+#
+question: -
+option: Check out the sound
+option: Stay where  you are
+video: https://www.youtube.com/watch?v=urZolHaB2EQ
+#
+video: https://www.youtube.com/watch?v=Pox8DqfhFJs
+#
+video:https://www.youtube.com/watch?v=6HG-Bsj41Dw
+#
+video:https://www.youtube.com/watch?v=0bpzcaiFPso
+#
+video:https://www.youtube.com/watch?v=TcCGbKd6s6U
+```
+
 ### Syntax options
 Option | Use 
 ------------ | -------------
