@@ -1,5 +1,15 @@
-# storifyV2
-Application that simplifies the process of building choose-your-own-path experiences. Demo available.
+# Storify
+Application that simplifies the process of building choose-your-own-path experiences. Was inspired by the Netflix movie, "Bandersnatch"
+
+# How it works
+Stories are written in my own syntax, which is very easy to learn and requires no coding experience from the user. This story in my syntax is then compiled to a JSON object and can then the story can be viewed.
+
+# Features
+  * Write stories
+  * Unlimited options at each path
+  * Video integration support with Youtube for video experiences
+  * Reference to any path arbitrarily using its id
+  * Choose-your-own-path story viewer with youtubePlayer support
 
 # Future improvements
-Need to use library such as https://jsplumbtoolkit.com/ for visual editor
+To build a visual editor, need to use library such as https://jsplumbtoolkit.com/
