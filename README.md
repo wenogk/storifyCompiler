@@ -11,6 +11,15 @@ Stories are written in my own syntax, which is very easy to learn and requires n
   * Reference to any path arbitrarily using its id
   * Choose-your-own-path story viewer with youtube player support
 
+### Syntax options
+Option | Use 
+------------ | -------------
+&#35; | Separator character
+question: | Question value
+option: | Option for a question
+ref[idVal]: | Refers to the id of a specific path, where idVal is the id number for that item
+video: | Youtube video url / id for item
+
 ### Syntax tutorial
 The syntax is line based. For each story item, a # character is placed in the line before it and after it. The order of these items is what creates the pathway. Below is a sample text only choose-your-own-path story I wrote:
 
@@ -67,14 +76,7 @@ video:https://www.youtube.com/watch?v=0bpzcaiFPso
 video:https://www.youtube.com/watch?v=TcCGbKd6s6U
 ```
 
-### Syntax options
-Option | Use 
------------- | -------------
-&#35; | Separator character
-question: | Question value
-option: | Option for a question
-ref[id] | Refers to the id of a specific path, where id is the id number
-video: | Youtube video url / id for item
+
 
 
 ### Future improvements
