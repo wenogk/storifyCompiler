@@ -33,7 +33,7 @@ Jack smashed the bottle on Jill's head, killing him.
 Jack ignored it. They continued their journey and were happy.
 #
 ```
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://raw.githubusercontent.com/wenogk/storifyV2/master/readme-media/gif1.gif)
 
 ### Syntax options
 Option | Use 
