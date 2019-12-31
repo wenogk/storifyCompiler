@@ -2,7 +2,7 @@
 Application that simplifies the process of building choose-your-own-path experiences. You focus on writing your story, we'll handle the technical stuff. Was inspired by the Netflix movie, "Bandersnatch"
 
 ### How it works
-Stories are written in my own syntax, which is very easy to learn and requires no coding experience from the user. This story in my syntax is then compiled to a JSON object and can then the story can be viewed.
+Stories are written in my own syntax, I call it a hash-story which is very easy to learn and requires no coding experience from the user. This hash-story in my syntax is then compiled to a JSON object and can then the story can be viewed.
 
 ### Features
   * Write interactive stories
@@ -11,7 +11,7 @@ Stories are written in my own syntax, which is very easy to learn and requires n
   * Reference to any path arbitrarily using its id
   * Choose-your-own-path story viewer with youtube player support
 
-### Syntax options
+### Hash-story options
 Option | Use 
 ------------ | -------------
 &#35; | Separator character
@@ -20,7 +20,7 @@ option: | Option for a question
 ref[idVal]: | Refers to the id of a specific path, where idVal is the id number for that item
 video: | Youtube video url / id for item
 
-### Syntax tutorial
+### Hash-story tutorial
 The syntax is line based. For each story item, a # character is placed in the line before it and after it. The order of these items is what creates the pathway. Below is a sample text only choose-your-own-path story I wrote:
 
 ```
@@ -42,7 +42,7 @@ Jack smashed the bottle on Jill's head, killing him.
 Jack ignored it. They continued their journey and were happy.
 #
 ```
-Below is the result of the pathways when the above syntax is compiled and run:
+Below is the result of the pathways when the above Hash-story is compiled and run:
 
 Pathway 1                  |  Pathway 2                | Pathway 3          
 :-------------------------:|:-------------------------:|:-------------------------:
@@ -80,7 +80,7 @@ video:https://www.youtube.com/watch?v=TcCGbKd6s6U
 
 
 ### Performance analysis
-The syntax written by the user is compiled to a javascript object which is a hashmap. Each item in the story has an id and this id is the key whereas its value is the item object. Because of the use of a hashmap and ordered id values, the time complexity to return a item is O(1) and the space complexity is O(J) where J is is the number of lines in the syntax subtracted by the number of, '#' characters
+The Hash-story written by the user is compiled to a javascript object which is a hashmap. Each item in the story has an id and this id is the key whereas its value is the item object. Because of the use of a hashmap and ordered id values, the time complexity to return a item is O(1) and the space complexity is O(J) where J is is the number of lines in the Hash-story subtracted by the number of, '#' characters
 
 ### Future improvements
 To build a visual editor, need to use library such as https://jsplumbtoolkit.com/
