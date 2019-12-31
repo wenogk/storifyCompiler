@@ -82,7 +82,7 @@ video:https://www.youtube.com/watch?v=TcCGbKd6s6U
 
 
 ### Performance analysis
-The Hash-story written by the user is compiled to a javascript object which is a hashmap. Each item in the story has an id and this id is the key whereas its value is the item object. Because of the use of a hashmap and ordered id values, the time complexity to return a item is O(1) and the space complexity is O(J) where J is is the number of lines in the Hash-story subtracted by the number of, '#' characters
+The Hash-story written by the user is compiled to a javascript object which is a hashmap. Each item in the story has an id and this id is the key and its value is the item object. Because of the use of a hashmap and ordered id values, the time complexity to return an item is O(1) and the space complexity is O(J) where J is is the number of lines in the Hash-story subtracted by the number of, '#' characters
 
 ### Future improvements
 To build a visual editor, need to use library such as https://jsplumbtoolkit.com/
