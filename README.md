@@ -37,8 +37,12 @@ Jack ignored it. They continued their journey and were happy.
 ### Syntax options
 Option | Use 
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+&#35; | Separator character
+question: | Question value
+option: | Option for a question
+ref[id] | Refers to the id of a specific path, where id is the id number
+video: | Youtube video url / id for item
+
 
 ### Future improvements
 To build a visual editor, need to use library such as https://jsplumbtoolkit.com/
